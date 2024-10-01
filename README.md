@@ -14,20 +14,21 @@ Sensors
 -------
 
 Audio Sensor (Bird-Frequency Sound Detector)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This sensor records surrounding sound and filters bird-specific frequencies. It is ideal for long-term field deployments due to its efficient power consumption and local storage capability. The audio recordings are later uploaded to AWS for further analysis.
+--------------------------------------------
+This sensor records surrounding sound and filters bird-specific frequencies. It is ideal for long-term field deployments due to its efficient power consumption and local storage capability.
+The audio recordings are later uploaded to AWS for further analysis.
 
 Vision Sensor (Image Capture Device)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
-This sensor captures environmental images at regular intervals using an **ArduCAM** camera. It is also designed for ultra-low-power operation, suitable for extended remote monitoring. Images are stored locally and transmitted via a GSM module when network access is available.
+This sensor captures environmental images at regular intervals using an **ArduCAM** camera. It is also designed for ultra-low-power operation, suitable for extended remote monitoring.
+Images are stored locally and transmitted via a GSM module when network access is available.
 
 Key Features
 ------------
 
 Audio Sensor
-~~~~~~~~~~~~
+------------
 - **Bird-Frequency Sound Detection**: Filters and records only bird-related sounds using a microphone.
 - **6-Second Recordings**: Each recording is 6 seconds long, stored on an SD card.
 - **Up to 300,000 Files**: The device can store up to 300,000 recordings.
@@ -35,7 +36,7 @@ Audio Sensor
 - **Ultra-Low Power Consumption**: Consumes only 0.2 Watts, ideal for energy-sensitive deployments.
 
 Vision Sensor
-~~~~~~~~~~~~~
+--------------
 - **ArduCAM 3MP 3.3V SPI Camera**: Captures high-quality images every 20 seconds.
 - **Efficient Data Storage**: Images are stored locally and transmitted when a network is available.
 - **Remote Data Upload**: Captured images are uploaded via GSM to the cloud or server for analysis.
@@ -59,14 +60,14 @@ How It Works
 ------------
 
 Audio Sensor
-~~~~~~~~~~~~
+-------------
 1. **Recording**: The microphone captures ambient sounds, filtering bird-specific frequencies. Each recording lasts for 6 seconds.
 2. **Data Backup**: The device saves the recordings on an SD card, capable of storing up to 300,000 files.
 3. **AWS Upload**: When internet access is available, the device uploads the recordings to AWS via the GSM EG25 module.
 4. **Low Power Operation**: Consumes only 0.2 Watts, making it suitable for long-term deployments.
 
 Vision Sensor
-~~~~~~~~~~~~~
+--------------
 1. **Image Capture**: The camera captures an image every 20 seconds.
 2. **Data Storage**: Images are saved locally on the device.
 3. **Remote Upload**: When the GSM EC200 module connects to the internet, stored images are uploaded to the cloud.
@@ -94,7 +95,7 @@ Usage
 -----
 
 Audio Sensor
-~~~~~~~~~~~~
+------------
 Once powered on, the device will:
 1. Automatically record bird-frequency audio.
 2. Store recordings on the SD card.
@@ -102,7 +103,7 @@ Once powered on, the device will:
 4. Enter low-power mode between recordings.
 
 Vision Sensor
-~~~~~~~~~~~~~
+-------------
 When running, the device will:
 1. Capture images at 20-second intervals.
 2. Store images locally.
@@ -113,3 +114,4 @@ Contributing
 ------------
 
 Feel free to submit issues or pull requests to improve the functionality or performance of either sensor.
+

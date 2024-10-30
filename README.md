@@ -4,9 +4,7 @@ Biodiversity Sensor Project
 Overview
 --------
 
-This repository contains two distinct biodiversity sensors, both optimized for ultra-low power consumption and designed for remote monitoring in natural environments.
-The sensors focus on capturing audio and visual data to help monitor wildlife, particularly bird species, through sound and image detection.
-The data is stored locally and uploaded to AWS for analysis when internet connectivity is available.
+This repository contains two distinct biodiversity sensors developed by the Indian Institute of Technology Ropar (IIT Ropar) within the Biodiversity Sensor Project of Syngenta Group, both optimized for ultra-low power consumption and designed for remote monitoring in natural environments. The sensors focus on capturing audio and visual data to help monitor wildlife, particularly bird species, through sound and image detection. The data is stored locally and uploaded to AWS for analysis when internet connectivity is available.
 
 The project utilizes custom hardware based on the **nRF5340DK** development board, integrated with GSM modules for remote data transmission.
 
